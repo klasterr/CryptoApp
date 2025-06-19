@@ -5,3 +5,7 @@
 /.vs
 /CryptoApp/.vs/CryptoApp
 /CryptoApp/obj/Debug
+/CryptoAPI.Console
+/.gitignore
+/.gitignore
+/CryptoApp/packages/Newtonsoft.Json.13.0.3
