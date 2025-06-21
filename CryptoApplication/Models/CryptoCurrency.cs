@@ -1,19 +1,24 @@
-﻿namespace CryptoApp.Models
+﻿using Newtonsoft.Json;
+
+namespace CryptoApplication.Models;
+
+public class CryptoCurrency
 {
-    public class CryptoCurrency
-    {
-        public string Id { get; set; }
+    [JsonProperty("id")]
+    public string Id { get; set; }
 
-        public string Symbol { get; set; }
+    [JsonProperty("symbol")]
+    public string Symbol { get; set; }
 
-        public string Name { get; set; }
+    [JsonProperty("name")]
+    public string Name { get; set; }
 
-        public decimal CurrentPrice { get; set; }
+    [JsonProperty("current_price")]
+    public decimal CurrentPrice { get; set; }
 
-        public decimal MarketCap { get; set; }
+    [JsonProperty("price_change_percentage_24h")]
+    public decimal PriceChangePercentage24h { get; set; }
 
-        public decimal PriceChangePercentage24h { get; set; }
-
-        public string Image { get; set; }
-    }
+    [JsonProperty("image")]
+    public string Image { get; set; }
 }
