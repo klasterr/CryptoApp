@@ -1,11 +1,39 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Build results
+bin/
+obj/
 
-/.vs
-/CryptoApp/.vs/CryptoApp
-/CryptoApp/obj/Debug
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vscode/
+.vs/
+
+# Rider
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.symbols.nupkg
+
+# Logs
+*.log
+
+# dotnet artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
 /CryptoAPI.Console
-/.gitignore
-/.gitignore
-/CryptoApp/packages/Newtonsoft.Json.13.0.3
+/CryptoApp/CryptoApp.csproj
+/CryptoApplication/CryptoApplication.sln
+/CryptoApplication/CryptoApplication.csproj
